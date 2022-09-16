@@ -1,0 +1,21 @@
+*{
+    padding: 0;
+    margin: 0;
+    background-color:lightgray;
+}
+
+#product, #qty, #price{
+    background-color: aliceblue;
+}
+
+.center{
+    text-align: center;
+}
+tr{
+    text-align: center;
+}
+
+.delete{
+    cursor: pointer;
+    color:red  ;
+}

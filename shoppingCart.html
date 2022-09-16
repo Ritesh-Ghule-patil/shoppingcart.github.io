@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c102305e9c.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+    
+    <div class="container-fluid mt-5" >
+        <div class="row">
+            <div class="col-6">
+                <h1>SHOPPING CART</h1>
+                <label for="" class="fw-bold mt-3">select Product</label><br>
+                <select name="product" id="product" class="w-100">
+                   
+                  </select>
+
+                  <label for="" class="mt-4 fw-bold"> Unit Price </label> 
+                  <input type="text" id="price" readonly name="price" > <br>
+
+                  <label for="" class="fw-bold mt-4 "  id="">select Quantity</label><br>
+                  <select name="qty" id="qty" class="w-100">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                    </select>
+                    <br>
+                    <button type="button" id="buy" class="btn-sm btn-primary mt-3">Add to cart</button>
+            </div>
+            <div class="col-6 mt-5 ps-5">
+                <h5 class="mb-3">Your's Shopping :</h5>
+                <table class="table table-bordered border-dark ">
+                    <thead>
+                        <tr>
+                          <th scope="col">Product Name</th>
+                          <th scope="col">Quantity</th>
+                          <th scope="col">Unit Price</th>
+                          <th scope="col" >Total </th>
+                          <th scope="col">Remove</th>
+                        </tr>
+                      </thead>
+                </table>
+                <div class="total">
+                    <label for="" class="fw-bold">Total : </label>
+                    <label for="" id="total" class="fw-bold"> 0 </label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="ShoppingCart.js"></script>
+</body>
+</html>
